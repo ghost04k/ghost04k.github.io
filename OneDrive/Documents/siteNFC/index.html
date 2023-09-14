@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Bamba</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Styles CSS pour la div scrollable */
+        .scrollable-icons {
+            height: 150px; /* Ajustez la hauteur souhaitée */
+            overflow-y: auto; /* Active le défilement vertical si le contenu dépasse la hauteur */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
+    <a class="navbar-brand" href="#">Bamba</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Profil-Personel<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<section id="about" class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 col-12">
+            <img src="images/pa.jpeg" alt="bamba" class="img-fluid rounded-circle">
+        </div>
+        <div class="col-md-8 col-12 mt-md-0 mt-4">
+            <h1 class="display-4">Bonjour, c'est moi Bamba</h1>
+            <p class="lead">Développeur Web/Mobile</p>
+            <a href="docs/cvMaster.pdf" class="btn btn-primary">Voir mon cv</a>
+        </div>
+    </div>
+</section>
+
+<section id="social-icons" class="container mt-5">
+    <div class="d-flex justify-content-center">
+        <div class="scrollable-icons">
+            <a href="https://www.linkedin.com/in/bamba-niang" class="d-block mx-2">
+                <img src="images/linkdin.png" alt="LinkedIn" class="img-fluid icon">
+            </a>
+            <a href="https://www.instagram.com/p/CWgW59eDzUW/?utm_medium=copy_link" class="d-block mx-2">
+                <img src="images/instagram.png" alt="Instagram" class="img-fluid icon">
+            </a>
+            <a href="https://github.com/ghost04k?tab=repositories" class="d-block mx-2">
+                <img src="images/github.png" alt="GitHub" class="img-fluid icon">
+            </a>
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<footer class="text-center mt-5">
+    <a href="#about">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <h5>2023 by Bamba-Codeur</h5>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+    // Sélectionnez la div conteneur
+    const scrollableContainer = document.querySelector('.scrollable-icons');
+
+    // Vérifiez si la hauteur du contenu dépasse la hauteur de la div
+    if (scrollableContainer.scrollHeight > scrollableContainer.clientHeight) {
+        scrollableContainer.style.overflowY = 'scroll';
+    }
+</script>
+</body>
+</html>
